@@ -23,15 +23,15 @@ export const PORTABLE_TEXT = groq`
     '_type': 'module.grid',
     ${MODULE_GRID},
   },
-  (_type == 'blockImages' || _type == 'module.images') => {
+  (_type == 'blockImages' || _type == 'module.images' || _type == 'images') => {
     '_type': 'module.images',
     ${MODULE_IMAGES}
   },
-  (_type == 'blockInstagram' || _type == 'module.instagram') => {
+  (_type == 'blockInstagram' || _type == 'module.instagram' || _type == 'instagram') => {
     '_type': 'module.instagram',
     ${MODULE_INSTAGRAM}
   },
-  (_type == 'blockProducts' || _type == 'module.products') => {
+  (_type == 'blockProducts' || _type == 'module.products' || _type == 'products') => {
     '_type': 'module.products',
     ${MODULE_PRODUCTS}
   },

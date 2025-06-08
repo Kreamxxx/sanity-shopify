@@ -3,7 +3,7 @@ import pluralize from 'pluralize-esm'
 import {defineField} from 'sanity'
 
 export const productFeaturesType = defineField({
-  name: 'products',
+  name: 'module.products',
   title: 'Products',
   type: 'object',
   icon: TagIcon,
