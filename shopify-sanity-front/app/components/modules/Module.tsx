@@ -2,7 +2,9 @@ import CalloutModule from '~/components/modules/Callout';
 import CallToActionModule from '~/components/modules/CallToAction';
 import CollectionModule from '~/components/modules/Collection';
 import ImageModule from '~/components/modules/Image';
+import ImagesModule from '~/components/modules/Images';
 import InstagramModule from '~/components/modules/Instagram';
+import ProductsModule from '~/components/modules/Products';
 import ProductModule from '~/components/modules/Product';
 import type {SanityModule} from '~/lib/sanity';
 
@@ -19,10 +21,14 @@ export default function Module({imageAspectClassName, module}: Props) {
       return <CallToActionModule module={module} />;
     case 'module.collection':
       return <CollectionModule module={module} />;
+    case 'module.images':
+      return <ImagesModule module={module} />;
     case 'module.image':
       return <ImageModule module={module} />;
     case 'module.instagram':
       return <InstagramModule module={module} />;
+    case 'module.products':
+      return <ProductsModule module={module} />;
     case 'module.product':
       return (
         <ProductModule

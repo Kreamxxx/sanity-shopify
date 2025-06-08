@@ -144,8 +144,10 @@ export type SanityModule =
   | SanityModuleCollection
   | SanityModuleGrid
   | SanityModuleImage
+  | SanityModuleImages
   | SanityModuleInstagram
-  | SanityModuleProduct;
+  | SanityModuleProduct
+  | SanityModuleProducts;
 
 export type SanityModuleAccordion = {
   _key?: string;

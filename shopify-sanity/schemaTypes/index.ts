@@ -19,6 +19,7 @@ import {heroType} from './objects/module/heroType'
 import {imageCallToActionType} from './objects/module/imageCallToActionType'
 import {imageFeaturesType} from './objects/module/imageFeaturesType'
 import {imageFeatureType} from './objects/module/imageFeatureType'
+import {imageType} from './objects/module/imageType'
 import {imageWithProductHotspotsType} from './objects/hotspot/imageWithProductHotspotsType'
 import {instagramType} from './objects/module/instagramType'
 import {inventoryType} from './objects/shopify/inventoryType'
@@ -68,6 +69,7 @@ const objects = [
   imageCallToActionType,
   imageFeaturesType,
   imageFeatureType,
+  imageType,
   imageWithProductHotspotsType,
   instagramType,
   inventoryType,

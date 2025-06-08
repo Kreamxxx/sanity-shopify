@@ -23,7 +23,7 @@ export const PORTABLE_TEXT = groq`
     '_type': 'module.grid',
     ${MODULE_GRID},
   },
-  (_type == 'blockImages' || _type == 'module.images') => {
+  (_type == 'blockImages' || _type == 'module.images' || _type == 'images') => {
     '_type': 'module.images',
     ${MODULE_IMAGES}
   },
