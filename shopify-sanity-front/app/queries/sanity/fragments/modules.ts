@@ -23,13 +23,13 @@ export const MODULES = groq`
   (_type == "module.collection" || _type == "collection") => {
     ${MODULE_COLLECTION}
   },
-  (_type == "module.image" || _type == "image") => {
+  (_type == "module.images" || _type == "images" || _type == "module.image" || _type == "image") => {
     ${MODULE_IMAGE}
   },
   (_type == "module.instagram" || _type == "instagram") => {
     ${MODULE_INSTAGRAM}
   },
-  (_type == "module.product" || _type == "products" || _type == "product") => {
+  (_type == "module.products" || _type == "module.product" || _type == "products" || _type == "product") => {
     ${MODULE_PRODUCT}
   }
 `;

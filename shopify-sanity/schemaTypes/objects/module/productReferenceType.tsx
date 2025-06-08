@@ -5,7 +5,7 @@ import {defineField} from 'sanity'
 import ShopifyDocumentStatus from '../../../components/media/ShopifyDocumentStatus'
 
 export const productReferenceType = defineField({
-  name: 'module.product',
+  name: 'productReference',
   title: 'Product',
   type: 'object',
   icon: TagIcon,

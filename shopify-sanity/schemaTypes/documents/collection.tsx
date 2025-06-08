@@ -85,7 +85,7 @@ export const collectionType = defineType({
       of: [
         defineArrayMember({type: 'module.callout'}),
         defineArrayMember({type: 'module.callToAction'}),
-        defineArrayMember({type: 'module.image'}),
+        defineArrayMember({type: 'module.images'}),
         defineArrayMember({type: 'module.instagram'}),
       ],
       group: 'editorial',
