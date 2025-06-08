@@ -9,7 +9,8 @@
     "start": "sanity start",
     "build": "sanity build",
     "deploy": "sanity deploy",
-    "deploy-graphql": "sanity graphql deploy"
+    "deploy-graphql": "sanity graphql deploy",
+    "lint": "eslint . --ext .ts,.tsx,.js"
   },
   "keywords": [
     "sanity"
@@ -36,7 +37,7 @@
     "@types/lodash.get": "^4.4.7",
     "@types/react": "^18.0.25",
     "@types/slug": "^5.0.3",
-    "eslint": "^9.9.0",
+    "eslint": "^9.28.0",
     "prettier": "^3.0.2",
     "typescript": "^5.1.6"
   },
