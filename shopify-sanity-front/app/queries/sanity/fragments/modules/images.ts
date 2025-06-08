@@ -4,11 +4,11 @@ import {MODULE_IMAGE} from './image';
 
 export const MODULE_IMAGES = groq`
   "fullWidth": select(
-    count(modules) > 1 => true,
+    count(imageFeatures) > 1 => true,
     fullWidth,
   ),
   layout,
-  modules[] {
+  imageFeatures[] {
     _key,
     ${MODULE_IMAGE}
   }

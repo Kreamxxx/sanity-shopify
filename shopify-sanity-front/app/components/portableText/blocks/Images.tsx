@@ -10,11 +10,11 @@ type Props = {
 };
 
 export default function ImagesBlock({centered, value}: Props) {
-  if (!Array.isArray(value.modules)) {
+  if (!Array.isArray(value.imageFeatures)) {
     return null;
   }
 
-  const multipleImages = value.modules.length > 1;
+  const multipleImages = value.imageFeatures.length > 1;
   let alignClass;
   switch (value.verticalAlign) {
     case 'bottom':
@@ -46,7 +46,7 @@ export default function ImagesBlock({centered, value}: Props) {
           alignClass,
         )}
       >
-        {value?.modules?.map((module) => (
+        {value?.imageFeatures?.map((module) => (
           <ImageModule key={module._key} module={module} />
         ))}
       </div>

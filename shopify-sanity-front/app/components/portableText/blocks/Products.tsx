@@ -9,11 +9,11 @@ type Props = {
 };
 
 export default function ProductsBlock({value}: Props) {
-  if (!Array.isArray(value?.modules)) {
+  if (!Array.isArray(value?.products)) {
     return null;
   }
 
-  const multipleProducts = value.modules.length > 1;
+  const multipleProducts = value.products.length > 1;
 
   return (
     <div
@@ -23,7 +23,7 @@ export default function ProductsBlock({value}: Props) {
         multipleProducts ? 'md:grid-cols-2' : 'md:grid-cols-1',
       )}
     >
-      {value?.modules?.map((module) => (
+      {value?.products?.map((module) => (
         <ProductModule
           imageAspectClassName="aspect-[320/220]"
           key={module._key}

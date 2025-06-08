@@ -36,7 +36,7 @@ export type SanityCollectionPage = {
   _id: string;
   colorTheme: SanityColorTheme;
   hero?: SanityHeroCollection;
-  modules: (SanityModuleImage | SanityModuleInstagram)[];
+  modules: (SanityModuleImage | SanityModuleImages | SanityModuleInstagram | SanityModuleProducts)[];
   seo: SanitySeo;
   slug?: string;
   sortOrder: string;
@@ -103,7 +103,7 @@ export type SanityHeroPage = {
 
 export type SanityHomePage = {
   hero?: SanityHeroHome;
-  modules: (SanityModuleImage | SanityModuleInstagram)[];
+  modules: (SanityModuleImage | SanityModuleImages | SanityModuleInstagram | SanityModuleProducts)[];
   seo: SanitySeo;
 };
 
@@ -239,7 +239,7 @@ export type SanityModuleImages = {
   _key?: string;
   _type: 'module.images';
   fullWidth?: boolean;
-  modules: SanityModuleImage[];
+  imageFeatures: SanityModuleImage[];
   verticalAlign?: 'bottom' | 'center' | 'top';
 };
 
@@ -259,7 +259,7 @@ export type SanityModuleProducts = {
   _key?: string;
   _type: 'module.products';
   layout?: 'card' | 'pill';
-  modules: SanityModuleProduct[];
+  products: SanityModuleProduct[];
 };
 
 export type SanityNotFoundPage = {

@@ -8,11 +8,11 @@ type Props = {
 };
 
 export default function ImagesModule({module}: Props) {
-  if (!Array.isArray(module.modules)) {
+  if (!Array.isArray(module.imageFeatures)) {
     return null;
   }
 
-  const multipleImages = module.modules.length > 1;
+  const multipleImages = module.imageFeatures.length > 1;
   let alignClass;
   switch (module.verticalAlign) {
     case 'bottom':
@@ -40,7 +40,7 @@ export default function ImagesModule({module}: Props) {
           alignClass,
         )}
       >
-        {module.modules.map((mod) => (
+        {module.imageFeatures.map((mod) => (
           <ImageModule key={mod._key} module={mod} />
         ))}
       </div>

@@ -4,7 +4,7 @@ import {MODULE_PRODUCT} from './product';
 
 export const MODULE_PRODUCTS = groq`
   layout,
-  modules[] {
+  products[] {
     _key,
     ${MODULE_PRODUCT}
   }
