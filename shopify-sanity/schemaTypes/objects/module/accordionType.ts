@@ -3,7 +3,7 @@ import pluralize from 'pluralize-esm'
 import {defineField} from 'sanity'
 
 export const accordionType = defineField({
-  name: 'accordion',
+  name: 'module.accordion',
   title: 'Accordion',
   type: 'object',
   icon: StackCompactIcon,
