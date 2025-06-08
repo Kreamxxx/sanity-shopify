@@ -2,7 +2,7 @@ import {BlockElementIcon, ImageIcon} from '@sanity/icons'
 import {defineArrayMember, defineField} from 'sanity'
 
 export const callToActionType = defineField({
-  name: 'callToAction',
+  name: 'module.callToAction',
   title: 'Call to action',
   type: 'object',
   icon: BlockElementIcon,

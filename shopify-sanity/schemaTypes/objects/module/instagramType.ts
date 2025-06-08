@@ -2,7 +2,7 @@ import {UserIcon} from '@sanity/icons'
 import {defineField} from 'sanity'
 
 export const instagramType = defineField({
-  name: 'instagram',
+  name: 'module.instagram',
   title: 'Instagram',
   type: 'object',
   icon: UserIcon,

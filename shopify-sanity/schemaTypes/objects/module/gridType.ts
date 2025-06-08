@@ -3,7 +3,7 @@ import pluralize from 'pluralize-esm'
 import {defineArrayMember, defineField} from 'sanity'
 
 export const gridType = defineField({
-  name: 'grid',
+  name: 'module.grid',
   title: 'Grid',
   type: 'object',
   icon: ThLargeIcon,

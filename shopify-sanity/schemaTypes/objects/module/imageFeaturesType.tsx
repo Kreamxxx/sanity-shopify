@@ -3,7 +3,7 @@ import pluralize from 'pluralize-esm'
 import {defineField} from 'sanity'
 
 export const imageFeaturesType = defineField({
-  name: 'images',
+  name: 'module.images',
   title: 'Images',
   type: 'object',
   icon: ImageIcon,

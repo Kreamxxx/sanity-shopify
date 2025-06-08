@@ -11,25 +11,25 @@ import {MODULE_PRODUCT} from './modules/product';
 export const MODULES = groq`
   _key,
   _type,
-  (_type == "module.accordion") => {
+  (_type == "module.accordion" || _type == "accordion") => {
     ${MODULE_ACCORDION}
   },
-  (_type == "module.callout") => {
+  (_type == "module.callout" || _type == "callout") => {
     ${MODULE_CALLOUT}
   },
-  (_type == 'module.callToAction') => {
+  (_type == 'module.callToAction' || _type == 'callToAction') => {
     ${MODULE_CALL_TO_ACTION}
   },
-  (_type == "module.collection") => {
+  (_type == "module.collection" || _type == "collection") => {
     ${MODULE_COLLECTION}
   },
-  (_type == "module.image") => {
+  (_type == "module.image" || _type == "image") => {
     ${MODULE_IMAGE}
   },
-  (_type == "module.instagram") => {
+  (_type == "module.instagram" || _type == "instagram") => {
     ${MODULE_INSTAGRAM}
   },
-  (_type == "module.product") => {
+  (_type == "module.product" || _type == "products" || _type == "product") => {
     ${MODULE_PRODUCT}
   }
 `;
