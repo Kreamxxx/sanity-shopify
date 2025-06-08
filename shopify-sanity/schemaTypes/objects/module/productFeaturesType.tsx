@@ -11,7 +11,7 @@ export const productFeaturesType = defineField({
     defineField({
       name: 'products',
       type: 'array',
-      of: [{type: 'productReference'}],
+      of: [{type: 'module.product'}],
       validation: (Rule) => Rule.required().max(2),
     }),
     defineField({
