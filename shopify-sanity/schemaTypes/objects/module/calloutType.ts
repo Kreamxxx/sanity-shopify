@@ -2,7 +2,7 @@ import {BulbOutlineIcon} from '@sanity/icons'
 import {defineField} from 'sanity'
 
 export const calloutType = defineField({
-  name: 'callout',
+  name: 'module.callout',
   title: 'Callout',
   type: 'object',
   icon: BulbOutlineIcon,
